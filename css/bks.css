@@ -1,0 +1,802 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body {
+    background-color: #f5f5f5 !important;
+    /* background-image: url(../img/bg-1.png); */
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33% !important;
+}
+
+.col-2 {
+    width: 16.66% !important;
+}
+
+.col-3 {
+    width: 25% !important;
+}
+
+.col-4 {
+    width: 33.33% !important;
+}
+
+.col-5 {
+    width: 41.66% !important;
+}
+
+.col-6 {
+    width: 50% !important;
+}
+
+.col-7 {
+    width: 58.33% !important;
+}
+
+.col-8 {
+    width: 66.66% !important;
+}
+
+.col-9 {
+    width: 75% !important;
+}
+
+.col-10 {
+    width: 83.33% !important;
+}
+
+.col-11 {
+    width: 91.66% !important;
+}
+
+.col-12 {
+    width: 100% !important;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.header-container {
+    border: 1px none #000000;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top: 20px;
+}
+
+.header-main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.header-main h1 {
+    margin: auto;
+    color: #4CAF50;
+}
+
+.search-form {
+    width: 100%;
+}
+
+.search-form input {
+    width: 80%;
+    height: 40px;
+    border: 1px double #4CAF50;
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 20px;
+}
+
+input, select {
+    width: 100%;
+    height: 40px;
+    border: 1px double #4CAF50;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    height: 34px;
+    opacity: 1;
+}
+
+input[type=number] {
+    height: 34px;
+}
+
+.m-1 {
+    margin: 10px;
+}
+
+.label-b {
+    font-size: 0.85em;
+    font-weight: 300;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+.search-form button {
+    width: 50px;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: 1px double #4CAF50;
+    border-radius: 0px 10px 10px 0px;
+    /* Safari */
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    margin-left: -5px;
+}
+
+.search-form button:hover {
+    background-color: #43A047;
+    border: 1px double #43A047;
+}
+
+.menu {
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.full-width {
+    width: inherit;
+}
+
+li a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+li a:hover, .button:hover {
+    background-color: #43A047;
+}
+
+li:first-child {
+    margin-left: 0;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: #4CAF50;
+    border: 1px double #4CAF50;
+    border-radius: 5px;
+    padding: 10px;
+    height: 40px;
+}
+
+.menu li a:hover {
+    border: 1px double #4CAF50;
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 16px;
+    margin: 4px 2px;
+    border-radius: 2px;
+    /* Safari */
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.header-menu {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1 !important;
+}
+
+.nav {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.nav li {
+    width: 15%;
+}
+
+.nav li:first-child {
+    width: 4%;
+}
+
+.nav-item {
+    padding: 15px;
+}
+
+.content-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flow-root;
+}
+
+.side-bar {
+    background-color: #ffffff;
+    border: 1px double #e9e9e9;
+    width: 20%;
+    display: inline-block;
+    overflow-x: hidden;
+    transition: 1s;
+}
+
+.cate {
+    display: block;
+    transition: 0.3s;
+}
+
+.cate li {
+    display: block;
+    font-size: 0.85rem;
+}
+
+.cate li a {
+    text-align: left;
+    color: #000000;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.cate li a:hover {
+    color: #ffffff;
+    background-color: #4CAF50;
+}
+
+.cate-title {
+    font-weight: 600;
+    padding: 15px 20px;
+    border-bottom: #4CAF50 double 1px;
+    transition: 0.3s;
+}
+
+.cate-lv1 {
+    transition: 0.3s;
+}
+
+.cate-lv2 {
+    text-indent: 20px;
+    transition: 0.3s;
+}
+
+.content-main {
+    width: 80%;
+    float: right;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px double #e9e9e9;
+    transition: 0.3s;
+    padding: 5px;
+    margin: 0px 5px 5px 5px;
+}
+
+.card:hover {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-header, .card-body {
+    margin-top: 10px;
+}
+
+.card-header h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Create a custom checkbox */
+
+.radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.radiomark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+.container input:checked~.radiomark {
+    background-color: #4CAF50;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.radiomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+
+.container input:checked~.radiomark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+
+.container .radiomark:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #4CAF50;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.card-header p {
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-item {
+    width: 25%;
+    margin: 0;
+    display: inline-block;
+}
+
+.item-infor {
+    display: block;
+    padding: 0 15px;
+}
+
+.item-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    min-height: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
+}
+
+.real-price {
+    font-weight: 200;
+    font-size: 0.9em;
+    font-style: oblique;
+    text-decoration: line-through;
+    color: #A5D6A7;
+}
+
+.sale-price {
+    font-weight: bold;
+}
+
+.sale-per {
+    color: #F44336 !important;
+}
+
+.rate {
+    color: #FFEB3B !important;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    pointer-events: auto!important;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+    cursor: pointer;
+    line-height: 31px;
+    border: 1px solid #ccc;
+    outline: 0;
+    background: #ffffff;
+    font-family: icomoon !important;
+    color: #464646;
+    text-align: center;
+    opacity: 1;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.prev:hover, .next:hover {
+    background: #d1d1d1;
+}
+
+.next i {
+    color: #464646;
+    margin-left: 3px;
+}
+
+.prev i {
+    color: #464646;
+}
+
+.slide img {
+    width: 100%;
+    height: 250px;
+    vertical-align: middle;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #4CAF50;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+
+#back-to-top:hover {
+    background: #e9ebec;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Chrome/Opera/Safari */
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-style: italic;
+}
+
+/* Firefox 19+ */
+
+::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-style: italic;
+}
+
+/* IE 10+ */
+
+:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-style: italic;
+}
+
+/* Firefox 18- */
+
+:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-style: italic;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.google {
+    background-color: #d34836
+}
+
+.twitter {
+    background-color: #00aced;
+}
+
+.h-500 {
+    height: 500px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+}
+
+footer, header, section {
+    display: block;
+}
+
+.mt-1 {
+    margin-top: 5px;
+}
+
+.mt-2 {
+    margin-top: 10px;
+}
+
+.mt-3 {
+    margin-top: 15px;
+}
+
+.mb-1 {
+    margin-bottom: 5px;
+}
+
+.mb-2 {
+    margin-bottom: 10px;
+}
+
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+.mr-1 {
+    margin-right: 5px;
+}
+
+.mr-2 {
+    margin-right: 10px;
+}
+
+.mr-3 {
+    margin-right: 15px;
+}
+
+.ml-1 {
+    margin-left: 5px;
+}
+
+.ml-2 {
+    margin-left: 10px;
+}
+
+.ml-3 {
+    margin-left: 15px;
+}
+
+.pt-1 {
+    padding-top: 5px;
+}
+
+.pb-1 {
+    padding-bottom: 5px;
+}
+
+.pb-2 {
+    padding-bottom: 10px;
+}
+
+.pl-1 {
+    padding-left: 5px;
+}
+
+.pl-2 {
+    padding-left: 10px;
+}
+
+.p-1 {
+    padding: 5px;
+}
+
+.p-2 {
+    padding: 10px;
+}
+
+.text-muted {
+    color: #9b9b9b;
+}
+
+.text-bks {
+    color: #4CAF50;
+}
+
+.text-heart {
+    color: #F44336;
+}
+
+.text-small {
+    font-size: 0.85em;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.border-bottom {
+    border-bottom: #4CAF50 double 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.border {
+    border: #4CAF50 double 1px;
+}
+
+table, th, td {
+    border: 1px solid #4CAF50;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+table tr {
+    background-color: #fff;
+}
+
+table th {
+    background-color: #eee;
+}
+p{
+    text-align: justify;
+}
