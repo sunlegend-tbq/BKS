@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BKS</title>
+    <link rel="stylesheet" type="text/css" href="css/bks.css">
+    <link rel="stylesheet" type="text/css" href="icon/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-main">
+                <div class="col-1 mt-3">
+                    <h1>BKS</h1>
+                </div>
+                <div class="col-8 mb-3 row">
+                    <div class="col-4">
+                        <div class="text-center mb-1">Đăng nhập</div>
+                        <div class="step">
+                            <div class="steped-bound p-1 text-white">1</div>
+                            <div class="steped-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center mb-1">Địa chỉ giao hàng</div>
+                        <div class="step">
+                            <div class="steped-bound p-1 text-white">2
+                            </div>
+                            <div class="step-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center mb-1">Thanh toán và đặt mua</div>
+                        <div class="step">
+                            <div class="step-bound p-1">3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="content-container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>BKS</h3>
+                        <p>Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/graphic-map.png" alt="#">
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>ĐỊA CHỈ GIAO HÀNG</h3>
+                    </div>
+                    <div class="card-body col-11">
+                        <form id="form">
+                            <div class="row m-1">
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Họ tên</label>
+                                <input class="col-8" type="text" id="name" name="name" placeholder="Nhập họ tên..." required>
+                            </div>
+                            <div class="row m-1">
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Số điện thoại</label>
+                                <input class="col-8" id="phone" name="phone" type="tel" placeholder="Nhập số điện thoại..." required>
+                            </div>
+                            <div class="row m-1">
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Tỉnh/Thành phố</label>
+                                <select class="col-8">
+                                    <option value="">Tỉnh/Thành phố</option>
+                                    <option value="">Hồ Chí Minh</option>
+                                    <option value="">Hà Nội</option>
+                                    <option value="">Gia Lai</option>
+                                </select>
+                            </div>
+                            <div class="row m-1">
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Quận/Huyện</label>
+                                <select class="col-8">
+                                    <option value="">Quận/Huyện</option>
+                                    <option value="">Hồ Chí Minh</option>
+                                    <option value="">Hà Nội</option>
+                                    <option value="">Gia Lai</option>
+                                </select>
+                            </div>
+                            <div class="row m-1">
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Phường/Xã</label>
+                                <select class="col-8">
+                                    <option value="">Phường/Xã</option>
+                                    <option value="">Hồ Chí Minh</option>
+                                    <option value="">Hà Nội</option>
+                                    <option value="">Gia Lai</option>
+                                </select>
+                            </div>
+                            <div class="row m-1">
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Địa chỉ</label>
+                                <textarea class="col-8" placeholder="Địa chỉ..."></textarea>
+                            </div>
+                            <div class="row m-1">
+                                <div class="col-3"></div>
+                                <input type="submit" value="Hủy bỏ" class="button col-4 bg-white border">
+                                <input type="submit" value="Cập nhật" class="button col-4">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" id="back-to-top" title="Back to top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    <footer>
+        <div class="content-container mt-1">
+            <div class="row mb-3">
+                <div class="col-4">
+                    <ul class="cate">
+                        <li>
+                            <h2>Cửa Hàng Bán Sách BKS</h2>
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Địa chỉ: Kp.6- P.Linh Trung - Q.Thủ Đức TP.HCM
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Hotline: 0169 345 2595
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Email: hotrokhachhang@bks.com
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Điện thoạt: 0169 345 2595
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="cate">
+                        <li>
+                            <h2>Thống Kê</h2>
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Người dùng trực tuyến: 1060
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Số lượt truy cập trong ngày: 2560
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Số lượt truy cập trong ngày: 15260
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Số đơn đặt hàng: 250
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <form>
+                        <ul class="cate">
+                            <li>
+                                <h2>Tư Vấn Online</h2>
+                            </li>
+                            <li class="cate-lv1 mt-2">
+                                <input type="email" placeholder="Email của bạn">
+                            </li>
+                            <li class="cate-lv1 mt-2">
+                                <input type="tel" placeholder="Số điện thoại của bạn">
+                            </li>
+                            <li class="cate-lv1 mt-2">
+                                <input type="submit" value="Gửi" class="button">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/bks.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</body>
+
+</html>
