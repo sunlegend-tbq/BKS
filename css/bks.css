@@ -800,12 +800,15 @@ footer, header, section {
 .border-bottom {
     border-bottom: #4CAF50 double 1px;
 }
+
 .border-right {
     border-right: #4CAF50 double 1px;
 }
+
 .border-left {
     border-left: #4CAF50 double 1px;
 }
+
 .border-top {
     border-top: #4CAF50 double 1px;
 }
@@ -928,13 +931,62 @@ p {
     color: #ffffff;
 }
 
-.bg-white{
+.bg-white {
     background-color: #ffffff;
     color: #4CAF50;
 }
+
 .border {
     border: #4CAF50 double 1px;
 }
-.float-right{
+
+.float-right {
     float: right;
+}
+
+.profile {
+    color: #4CAF50;
+    border: none !important;
+    border-radius: 0px !important;
+    background-color: #ffffff !important;
+}
+
+.profile:hover {
+    border: none !important;
+    background-color: #ffffff !important;
+    color: #4CAF50 !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: #f5f5f5 double 1px !important;
+    border-radius: 3px !important;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: #ffffff !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

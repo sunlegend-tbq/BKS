@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="icon/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                 </div>
                 <div class="col-6">
                     <form class="search-form">
-                        <input type="text" name="search" placeholder="Tìm kiếm">
+                        <input type="text" id="search" name="search" placeholder="Tìm kiếm">
                         <button type="submit">
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </button>
@@ -29,11 +30,20 @@
                 </div>
                 <nav class="col-4">
                     <ul class="menu">
-                        <li>
-                            <a class="" href="register.html">
-                                <i class="fa fa-user-plus" aria-hidden="true"></i>
-                                <span>Đăng Kí Tài Khoản</span>
+                        <li class="dropdown">
+                            <a class="profile dropbtn" href="#">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                <span>Trần Bá Quan</span>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
+                            <div class="dropdown-content">
+                                <a class="text-small" href="#">Quản lí đơn hàng</a>
+                                <a class="text-small" href="#">Tài khoản của tôi</a>
+                                <a class="text-small" href="#">Thông báo của tôi</a>
+                                <a class="text-small" href="#">Sản phẩm yêu thích</a>
+                                <a class="text-small" href="#">Sản phẩm mua sau</a>
+                                <a class="text-small" href="#">Đăng xuất tài khoản</a>
+                            </div>
                         </li>
                         <li>
                             <a class="" href="#login">
@@ -67,74 +77,99 @@
         </div>
     </header>
     <section class="content-container">
-        <div class="row">
+        <div class="side-bar">
+            <ul id="menu" class="cate">
+                <li class="cate-title">
+                    Danh Mục Sản Phẩm
+                </li>
+                <li class="cate-lv1">
 
-            <div class="col-1"></div>
-            <div class="col-3">
-                <div class="card h-500">
-                    <div class="card-header">
-                        <h3>BKS</h3>
-                        <p>Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
-                    </div>
-                    <div class="card-body">
-                        <img src="img/graphic-map.png" alt="#">
-                    </div>
-                </div>
-            </div>
-            <div class="col-7">
-                <div class="card h-500">
-                    <div class="card-header">
-                        <h3>Đăng Nhập</h3>
-                    </div>
-                    <div class="card-body">
-                        <form action="">
-                            <div class="row m-1">
-                                <div class="col-2"></div>
-                                <label class="col-2 middle-align">Email</label>
-                                <input class="col-7" type="text" placeholder="Nhập email..." required>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-2"></div>
-                                <label class="col-2 middle-align">Mật khẩu</label>
-                                <input class="col-7" type="password" placeholder="Nhập password..." required>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-4"></div>
-                                <p class="label-b">Quên mật khẩu? nhấn vào
-                                    <a href="#">đây</a>
-                                </p>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-4"></div>
-                                <a href="#" class="button col-7">Đăng Nhập</a>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-4"></div>
-                                <a class="button col-7 facebook">
-                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                    Đăng Nhập Bằng Facebook
-                                </a>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-4"></div>
-                                <a class="button col-7 google">
-                                    <i class="fa fa-google-plus-square" aria-hidden="true"></i>
-                                    Đăng Nhập Bằng Google
-                                </a>
-                            </div>
-                            <div class="row m-1 ">
-                                <div class="col-4"></div>
-                                <a class="button col-7 twitter">
-                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                                    Đăng Nhập Bằng Twitter
-                                </a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+                    <a href="#vnbooks">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <span>Sách tiếng việt</span>
+                    </a>
+                    <ul>
+                        <li class="cate-lv2">
+                            <a href="#">Sách văn học</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Sách kinh tế</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Sách kĩ năng - sống đẹp</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Sách bà mẹ và em bé</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Sách tham khảo</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Sách học ngoại ngữ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cate-lv1">
+
+                    <a href="#">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <span>Sách tiếng anh</span>
+                    </a>
+                    <ul>
+                        <li class="cate-lv2">
+                            <a href="#">Children's book</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Education - Teaching</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Fiction - Lecterature</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Dictionnary</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Art & Photography</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Science - technology</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="cate-lv1">
+                    <a href="#">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <span>Ebook</span>
+                    </a>
+                    <ul>
+                        <li class="cate-lv2">
+                            <a href="#">Ebook chọn lọc</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Ebook mới phát hành</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Ebook văn học - tiểu thuyết</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Ebook kinh tế</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Ebook chuyên ngành</a>
+                        </li>
+                        <li class="cate-lv2">
+                            <a href="#">Ebook thiếu nhi</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content-main">
         </div>
     </section>
+    <a href="#" id="back-to-top" title="Back to top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
     <footer>
         <div class="content-container mt-1">
             <div class="row mb-3">
@@ -205,6 +240,7 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/bks.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
 </body>
 
 </html>
