@@ -800,6 +800,15 @@ footer, header, section {
 .border-bottom {
     border-bottom: #4CAF50 double 1px;
 }
+.border-right {
+    border-right: #4CAF50 double 1px;
+}
+.border-left {
+    border-left: #4CAF50 double 1px;
+}
+.border-top {
+    border-top: #4CAF50 double 1px;
+}
 
 a {
     text-decoration: none;
@@ -925,4 +934,7 @@ p {
 }
 .border {
     border: #4CAF50 double 1px;
+}
+.float-right{
+    float: right;
 }

@@ -25,13 +25,13 @@
                         <div class="text-center mb-1">Đăng nhập</div>
                         <div class="step">
                             <div class="steped-bound p-1 text-white">1</div>
-                            <div class="steped-line"></div>
+                            <div class="step-line"></div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="text-center mb-1">Địa chỉ giao hàng</div>
                         <div class="step">
-                            <div class="steped-bound p-1 text-white">2
+                            <div class="step-bound p-1">2
                             </div>
                             <div class="step-line"></div>
                         </div>
@@ -49,73 +49,77 @@
     </header>
     <section class="content-container">
         <div class="row">
+
+            <div class="col-1"></div>
             <div class="col-3">
-                <div class="card">
+                <div class="card h-500">
                     <div class="card-header">
                         <h3>BKS</h3>
-                        <p>Nhập thông tin đầy đủ để BKS dễ dàng giao hàng cho bạn. Bạn nhập càng cụ thể việc giao hàng sẽ càng nhanh.</p>
+                        <p>Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
                     </div>
                     <div class="card-body">
                         <img src="img/graphic-map.png" alt="#">
                     </div>
                 </div>
             </div>
-            <div class="col-9">
-                <div class="card">
+            <div class="col-7">
+                <div class="card h-500">
                     <div class="card-header">
-                        <h3>ĐỊA CHỈ GIAO HÀNG</h3>
+                        <h3>Đăng Nhập</h3>
                     </div>
-                    <div class="card-body col-11">
-                        <form id="form">
+                    <div class="card-body">
+                        <form action="">
                             <div class="row m-1">
                                 <div class="col-1"></div>
-                                <label class="col-2 middle-align">Họ tên</label>
-                                <input class="col-8" type="text" id="name" name="name" placeholder="Nhập họ tên..." required>
+                                <label class="col-2 middle-align">Email</label>
+                                <input class="col-8" type="text" placeholder="Nhập email..." required>
                             </div>
                             <div class="row m-1">
                                 <div class="col-1"></div>
-                                <label class="col-2 middle-align">Số điện thoại</label>
-                                <input class="col-8" id="phone" name="phone" type="tel" placeholder="Nhập số điện thoại..." required>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-1"></div>
-                                <label class="col-2 middle-align">Tỉnh/Thành phố</label>
-                                <select class="col-8">
-                                    <option value="">Tỉnh/Thành phố</option>
-                                    <option value="">Hồ Chí Minh</option>
-                                    <option value="">Hà Nội</option>
-                                    <option value="">Gia Lai</option>
-                                </select>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-1"></div>
-                                <label class="col-2 middle-align">Quận/Huyện</label>
-                                <select class="col-8">
-                                    <option value="">Quận/Huyện</option>
-                                    <option value="">Hồ Chí Minh</option>
-                                    <option value="">Hà Nội</option>
-                                    <option value="">Gia Lai</option>
-                                </select>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-1"></div>
-                                <label class="col-2 middle-align">Phường/Xã</label>
-                                <select class="col-8">
-                                    <option value="">Phường/Xã</option>
-                                    <option value="">Hồ Chí Minh</option>
-                                    <option value="">Hà Nội</option>
-                                    <option value="">Gia Lai</option>
-                                </select>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-1"></div>
-                                <label class="col-2 middle-align">Địa chỉ</label>
-                                <textarea class="col-8" placeholder="Địa chỉ..."></textarea>
+                                <label class="col-2 middle-align">Mật khẩu</label>
+                                <input class="col-8" type="password" placeholder="Nhập password..." required>
                             </div>
                             <div class="row m-1">
                                 <div class="col-3"></div>
-                                <input type="submit" value="Hủy bỏ" class="button col-4 bg-white border">
-                                <input type="submit" value="Cập nhật" class="button col-4">
+                                <span class="label-b">Quên mật khẩu? nhấn vào
+                                    <a href="#">đây</a>
+                                </span>
+                            </div>
+                            <div class="row m-1">
+                                <div class="col-3"></div>
+                                <a href="#" class="button col-8">Đăng Nhập</a>
+                            </div>
+                            <div class="row m-1">
+                                <div class="col-3"></div>
+                                <span class="label-b">Bạn chưa có tài khoản?
+                                    <a href="#">Đăng kí ngay</a>
+                                </span>
+                            </div>
+                            <div class="row m-1 text-center">
+                                <div class="col-3"></div>
+                                <span class="label-b text-center">Hoặc
+                                </span>
+                            </div>
+                            <div class="row m-1">
+                                <div class="col-3"></div>
+                                <a class="button col-8 facebook">
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    Đăng Nhập Bằng Facebook
+                                </a>
+                            </div>
+                            <div class="row m-1">
+                                <div class="col-3"></div>
+                                <a class="button col-8 google">
+                                    <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                                    Đăng Nhập Bằng Google
+                                </a>
+                            </div>
+                            <div class="row m-1 ">
+                                <div class="col-3"></div>
+                                <a class="button col-8 twitter">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                    Đăng Nhập Bằng Twitter
+                                </a>
                             </div>
                         </form>
                     </div>

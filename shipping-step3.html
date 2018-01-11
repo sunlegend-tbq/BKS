@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BKS</title>
+    <link rel="stylesheet" type="text/css" href="css/bks.css">
+    <link rel="stylesheet" type="text/css" href="icon/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-main">
+                <div class="col-1 mt-3">
+                    <h1>BKS</h1>
+                </div>
+                <div class="col-8 mb-3 row">
+                    <div class="col-4">
+                        <div class="text-center mb-1">Đăng nhập</div>
+                        <div class="step">
+                            <div class="steped-bound p-1 text-white">1</div>
+                            <div class="steped-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center mb-1">Địa chỉ giao hàng</div>
+                        <div class="step">
+                            <div class="steped-bound p-1 text-white">2
+                            </div>
+                            <div class="steped-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center mb-1">Thanh toán và đặt mua</div>
+                        <div class="step">
+                            <div class="steped-bound p-1 text-white">3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="content-container">
+        <div class="row">
+            <div class="col-9">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>1. Chọn hình thức giao hàng</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="m-1">
+                            <label class="container">Giao hàng tiêu chuẩn
+                                <input type="radio" checked="checked" name="shipping-method">
+                                <span class="radiomark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>2. Chọn hình thức thanh toán</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="m-1">
+                            <label class="container">Thanh toán khi nhận tiền mặt
+                                <input type="radio" checked="checked" name="checkout">
+                                <span class="radiomark"></span>
+                            </label>
+                        </div>
+                        <div class="m-1">
+                            <label class="container">Thẻ ATM nội địa/Internet Banking (Miễn phí thanh toán)
+                                <input type="radio" name="checkout">
+                                <span class="radiomark"></span>
+                            </label>
+                        </div>
+                        <div class="m-1">
+                            <label class="container">Thanh toán bằng MoMo -
+                                <a href="#">Chi tiết</a>
+                                <input type="radio" name="checkout">
+                                <span class="radiomark"></span>
+                            </label>
+                        </div>
+                        <div class="m-1">
+                            <label class="container">Thanh toán bằng thẻ quốc tế Visa, Master, JCB
+                                <input type="radio" name="checkout">
+                                <span class="radiomark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>3. Chọn dịch vụ bổ sung</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="m-1">
+                            <label class="container">Gửi quà tặng đến bạn bè, người thân
+                                <input type="checkbox" name="service">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="m-1">
+                            <label class="container">In hóa đơn đỏ
+                                <input type="checkbox" name="service">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="m-1">
+                            <label class="container">Dịch vụ bọc sách (2000đ)
+                                <input type="checkbox" name="service">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 p-1">
+                    <div class="row mb-1">
+                        <a class="button col-4" href="#">Đặt Mua</a>
+                    </div>
+                    <span class="text-small">(Xin vui lòng kiểm tra lại đơn hàng trước khi Đặt Mua)</span>
+                </div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div>&nbsp;</div>
+                <div class="row col-6">
+                    <div class="col-4 text-center text-small border-right">
+                        <a href="#">Điều khoản sử dụng</a>
+                    </div>
+                    <div class="col-4 text-center text-small border-right">
+                        <a href="#">Chính sách đổi trả</a>
+                    </div>
+                    <div class="col-4 text-center text-small">
+                        <a href="#">Chính sách bảo mật</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="border-bottom pb-3 pt-3">
+                        <span class="mr-3">Địa chỉ giao hàng</span>
+                        <div class="float-right">
+                            <a class="button" href="#">Sửa</a>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="text-small text-bold">Trần Bá Quan</p>
+                        <p class="text-small">43/13, Khu Phố 5, Phường Linh Trung, Quận Thủ Đức, Hồ Chí Minh
+                            <br> T: 01693452595
+                            <br> Việt Nam</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="border-bottom pb-3 pt-3">
+                        <span class="mr-3">Đơn Hàng (2 sản phẩm)</span>
+                        <div class="float-right">
+                            <a class="button" href="#">Sửa</a>
+                        </div>
+                    </div>
+                    <div class="border-bottom">
+                        <p class="text-small">2x
+                            <span class="text-bks">Cây Chuối Non Đi Giày Xanh</span>
+                        </p>
+                        <p class="text-small">Cung cấp bởi
+                            <span class="text-bks">nhà xuất bản Kim Đồng</span>
+                        </p>
+                    </div>
+                    <div class="pt-3">
+                        <span class="mr-3">Tạm tính:</span>
+                        <span class="">450.000đ</span>
+                    </div>
+                    <div class="pb-3 pt-3 border-bottom">
+                        <span class="mr-3">Phí vận chuyển:</span>
+                        <span class="">0đ</span>
+                    </div>
+                    <div class="pb-3 pt-3">
+                        <span class="mr-3">Thành tiền:</span>
+                        <span class="text-heart text-bold">450.000đ</span>
+                        <span class="text-small">(Đã gồm VAT)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" id="back-to-top" title="Back to top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    <footer>
+        <div class="content-container mt-1">
+            <div class="row mb-3">
+                <div class="col-4">
+                    <ul class="cate">
+                        <li>
+                            <h2>Cửa Hàng Bán Sách BKS</h2>
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Địa chỉ: Kp.6- P.Linh Trung - Q.Thủ Đức TP.HCM
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Hotline: 0169 345 2595
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Email: hotrokhachhang@bks.com
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Điện thoạt: 0169 345 2595
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="cate">
+                        <li>
+                            <h2>Thống Kê</h2>
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Người dùng trực tuyến: 1060
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Số lượt truy cập trong ngày: 2560
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Số lượt truy cập trong ngày: 15260
+                        </li>
+                        <li class="cate-lv1 mt-2">
+                            Số đơn đặt hàng: 250
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <form>
+                        <ul class="cate">
+                            <li>
+                                <h2>Tư Vấn Online</h2>
+                            </li>
+                            <li class="cate-lv1 mt-2">
+                                <input type="email" placeholder="Email của bạn">
+                            </li>
+                            <li class="cate-lv1 mt-2">
+                                <input type="tel" placeholder="Số điện thoại của bạn">
+                            </li>
+                            <li class="cate-lv1 mt-2">
+                                <input type="submit" value="Gửi" class="button">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/bks.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</body>
+
+</html>

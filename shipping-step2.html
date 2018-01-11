@@ -10,71 +10,51 @@
     <link rel="stylesheet" type="text/css" href="icon/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
 </head>
 
 <body>
     <header>
         <div class="header-container">
             <div class="header-main">
-                <div class="col-2">
+                <div class="col-1 mt-3">
                     <h1>BKS</h1>
                 </div>
-                <div class="col-6">
-                    <form class="search-form">
-                        <input type="text" name="search" placeholder="Tìm kiếm">
-                        <button type="submit">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
-                    </form>
-                </div>
-                <nav class="col-4">
-                    <ul class="menu">
-                        <li>
-                            <a class="" href="register.html">
-                                <i class="fa fa-user-plus" aria-hidden="true"></i>
-                                <span>Đăng Kí Tài Khoản</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="" href="#login">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                <span>Giỏ Hàng</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="sticky-menu" class="header-menu">
-                <div class="nav">
-                    <ul>
-                        <li>
-                            <a href="#" id="menu-toggle" class="nav-item">
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-item">Trang Chủ</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-item">Lịch Sử Mua Hàng</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-item">Liên Hệ</a>
-                        </li>
-                    </ul>
+                <div class="col-8 mb-3 row">
+                    <div class="col-4">
+                        <div class="text-center mb-1">Đăng nhập</div>
+                        <div class="step">
+                            <div class="steped-bound p-1 text-white">1</div>
+                            <div class="steped-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center mb-1">Địa chỉ giao hàng</div>
+                        <div class="step">
+                            <div class="steped-bound p-1 text-white">2
+                            </div>
+                            <div class="step-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center mb-1">Thanh toán và đặt mua</div>
+                        <div class="step">
+                            <div class="step-bound p-1">3
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <section class="content-container">
         <div class="row">
-
             <div class="col-1"></div>
             <div class="col-3">
                 <div class="card h-500">
                     <div class="card-header">
                         <h3>BKS</h3>
-                        <p>Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn.</p>
+                        <p>Nhập thông tin đầy đủ để BKS dễ dàng giao hàng cho bạn. Bạn nhập càng cụ thể việc giao hàng sẽ càng nhanh.</p>
                     </div>
                     <div class="card-body">
                         <img src="img/graphic-map.png" alt="#">
@@ -84,50 +64,59 @@
             <div class="col-7">
                 <div class="card h-500">
                     <div class="card-header">
-                        <h3>Đăng Nhập</h3>
+                        <h3>ĐỊA CHỈ GIAO HÀNG</h3>
                     </div>
-                    <div class="card-body">
-                        <form action="">
+                    <div class="card-body col-11">
+                        <form id="form">
                             <div class="row m-1">
-                                <div class="col-2"></div>
-                                <label class="col-2 middle-align">Email</label>
-                                <input class="col-7" type="text" placeholder="Nhập email..." required>
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Họ tên</label>
+                                <input class="col-8" type="text" id="name" name="name" placeholder="Nhập họ tên..." required>
                             </div>
                             <div class="row m-1">
-                                <div class="col-2"></div>
-                                <label class="col-2 middle-align">Mật khẩu</label>
-                                <input class="col-7" type="password" placeholder="Nhập password..." required>
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Số điện thoại</label>
+                                <input class="col-8" id="phone" name="phone" type="tel" placeholder="Nhập số điện thoại..." required>
                             </div>
                             <div class="row m-1">
-                                <div class="col-4"></div>
-                                <p class="label-b">Quên mật khẩu? nhấn vào
-                                    <a href="#">đây</a>
-                                </p>
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Tỉnh/Thành phố</label>
+                                <select class="col-8">
+                                    <option value="">Tỉnh/Thành phố</option>
+                                    <option value="">Hồ Chí Minh</option>
+                                    <option value="">Hà Nội</option>
+                                    <option value="">Gia Lai</option>
+                                </select>
                             </div>
                             <div class="row m-1">
-                                <div class="col-4"></div>
-                                <a href="#" class="button col-7">Đăng Nhập</a>
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Quận/Huyện</label>
+                                <select class="col-8">
+                                    <option value="">Quận/Huyện</option>
+                                    <option value="">Hồ Chí Minh</option>
+                                    <option value="">Hà Nội</option>
+                                    <option value="">Gia Lai</option>
+                                </select>
                             </div>
                             <div class="row m-1">
-                                <div class="col-4"></div>
-                                <a class="button col-7 facebook">
-                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                    Đăng Nhập Bằng Facebook
-                                </a>
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Phường/Xã</label>
+                                <select class="col-8">
+                                    <option value="">Phường/Xã</option>
+                                    <option value="">Hồ Chí Minh</option>
+                                    <option value="">Hà Nội</option>
+                                    <option value="">Gia Lai</option>
+                                </select>
                             </div>
                             <div class="row m-1">
-                                <div class="col-4"></div>
-                                <a class="button col-7 google">
-                                    <i class="fa fa-google-plus-square" aria-hidden="true"></i>
-                                    Đăng Nhập Bằng Google
-                                </a>
+                                <div class="col-1"></div>
+                                <label class="col-2 middle-align">Địa chỉ</label>
+                                <textarea class="col-8" placeholder="Địa chỉ..."></textarea>
                             </div>
-                            <div class="row m-1 ">
-                                <div class="col-4"></div>
-                                <a class="button col-7 twitter">
-                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                                    Đăng Nhập Bằng Twitter
-                                </a>
+                            <div class="row m-1">
+                                <div class="col-3"></div>
+                                <input type="submit" value="Hủy bỏ" class="button col-4 bg-white border">
+                                <input type="submit" value="Cập nhật" class="button col-4">
                             </div>
                         </form>
                     </div>
@@ -135,6 +124,9 @@
             </div>
         </div>
     </section>
+    <a href="#" id="back-to-top" title="Back to top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
     <footer>
         <div class="content-container mt-1">
             <div class="row mb-3">
@@ -201,6 +193,7 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/bks.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
 </body>
 
 </html>
