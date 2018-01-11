@@ -124,7 +124,7 @@
                         </div>
                     </li>
                     <li class="cate-lv1">
-                        <a class="actived" href="#">
+                        <a href="#">
                             <i class="fa fa-address-book-o mr-1" aria-hidden="true"></i>
                             <span>Thông tin tài khoản</span>
                         </a>
@@ -138,7 +138,7 @@
                         </a>
                     </li>
                     <li class="cate-lv1">
-                        <a href="#">
+                        <a class="actived" href="#">
                             <i class="fa fa-newspaper-o mr-1" aria-hidden="true"></i>
                             <span>Quản lí đơn hàng</span>
                         </a>
@@ -178,89 +178,75 @@
             <div class="content-main">
                 <div class="card mb-0">
                     <div class="card-header">
-                        <h3>Thông Tin Tài Khoản</h3>
+                        <h3>Quản Lí Đơn Hàng</h3>
                     </div>
-                    <div class="card-body">
-                        <form action="">
-                            <div class="row m-1">
-                                <div class="col-1"></div>
-                                <label class="col-2 middle-align">Họ tên</label>
-                                <input class="col-6" type="text" value="Trần Bá Quan">
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-1"></div>
-                                <label class="col-2 middle-align">Email</label>
-                                <input class="col-6" type="text" value="15130148@st.hcmuaf.edu.vn" disabled>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-1"></div>
-                                <label class="col-2">Giới tính</label>
-                                <div class="col-1">
-                                    <label class="container">Nam
-                                        <input type="radio" checked="checked" name="sex">
-                                        <span class="radiomark"></span>
-                                    </label>
-                                </div>
-                                <div class="col-1"></div>
-                                <div class="col-1">
-                                    <label class="container">Nữ
-                                        <input type="radio" name="sex">
-                                        <span class="radiomark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-1"></div>
-                                <label class="col-2 middle-align">Ngày sinh</label>
-                                <select class="col-1 mr-2">
-                                    <option value="">2</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                                <select class="col-1 mr-2">
-                                    <option value="">11</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                                <select class="col-1">
-                                    <option value="">1997</option>
-                                    <option value="">1997</option>
-                                    <option value="">1998</option>
-                                    <option value="">1999</option>
-                                </select>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-3"></div>
-                                <label class="container">
-                                    <label class="label-b">Thay đổi mật khẩu
-                                    </label>
-                                    <input type="checkbox" name="change-password">
-                                    <span class="checkmark"></span>
-                                </label>
-
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-1"></div>
-                                <label class="col-2 middle-align">Mật khẩu cũ</label>
-                                <input class="col-6" type="password" placeholder="Nhập mật khẩu cũ..." required>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-1"></div>
-                                <label class="col-2 middle-align">Mật khẩu mới</label>
-                                <input class="col-6" type="password" placeholder="Nhập mật khẩu mới..." required>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-1"></div>
-                                <label class="col-2 middle-align">Nhập lại</label>
-                                <input class="col-6" type="password" placeholder="Nhập lại mật khẩu..." required>
-                            </div>
-                            <div class="row m-1">
-                                <div class="col-3"></div>
-                                <input type="submit" value="Cập nhật" class="button col-6">
-                            </div>
-                        </form>
+                    <div class="card-body infor">
+                        <table class="col-12">
+                            <thead>
+                                <tr>
+                                    <th class="col-1">Mã đơn hàng</th>
+                                    <th class="col-1">Ngày mua</th>
+                                    <th class="col-7">Sản phẩm</th>
+                                    <th class="col-1">Tổng tiền</th>
+                                    <th class="col-2">Trạng thái</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="item">
+                                    <td>77521569</td>
+                                    <td>07/12/2017</td>
+                                    <td>Nói Dối Và Hẹn Hò Trực Tuyến</td>
+                                    <td>30.300đ</td>
+                                    <td>Đã hủy</td>
+                                </tr>
+                                <tr class="item">
+                                    <td>96871195</td>
+                                    <td>22/11/2017</td>
+                                    <td>Dù Sợ Vẫn Cứ Yêu (Bản Thông Thường)...và 01 sản phẩm khác</td>
+                                    <td>128.000đ</td>
+                                    <td>Đã hủy</td>
+                                </tr>
+                                <tr class="item">
+                                    <td>38019296</td>
+                                    <td>23/07/2017</td>
+                                    <td> Oxford Learner's Pocket Grammar: Pocket-sized Grammar To Revise And Check Grammar Rules...và
+                                        02 sản phẩm khác</td>
+                                    <td>87.000đ</td>
+                                    <td>Giao hàng thành công</td>
+                                </tr>
+                                <tr class="item">
+                                    <td>38019296</td>
+                                    <td>23/07/2017</td>
+                                    <td> Oxford Learner's Pocket Grammar: Pocket-sized Grammar To Revise And Check Grammar Rules...và
+                                        02 sản phẩm khác</td>
+                                    <td>87.000đ</td>
+                                    <td>Giao hàng thành công</td>
+                                </tr>
+                                <tr class="item">
+                                    <td>38019296</td>
+                                    <td>23/07/2017</td>
+                                    <td> Oxford Learner's Pocket Grammar: Pocket-sized Grammar To Revise And Check Grammar Rules...và
+                                        02 sản phẩm khác</td>
+                                    <td>87.000đ</td>
+                                    <td>Giao hàng thành công</td>
+                                </tr>
+                                <tr class="item">
+                                    <td>38019296</td>
+                                    <td>23/07/2017</td>
+                                    <td> Oxford Learner's Pocket Grammar: Pocket-sized Grammar To Revise And Check Grammar Rules...và
+                                        02 sản phẩm khác</td>
+                                    <td>87.000đ</td>
+                                    <td>Giao hàng thành công</td>
+                                </tr>
+                                <tr class="item">
+                                    <td>34944080</td>
+                                    <td>23/07/2017</td>
+                                    <td>Nói Dối Và Hẹn Hò Trực Tuyến</td>
+                                    <td>30.300đ</td>
+                                    <td>Giao hàng thành công</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

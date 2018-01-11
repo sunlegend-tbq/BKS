@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // overfollow menu
-    $('.cate-lv1 a').click(function () {
+    $('#expand a').click(function () {
         $(this).next().slideToggle(1000);
         $(this).find(">:first-child").toggleClass("fa-caret-up");
     });
