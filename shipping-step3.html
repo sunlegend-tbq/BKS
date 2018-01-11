@@ -70,28 +70,107 @@
                     <div class="card-body">
                         <div class="m-1">
                             <label class="container">Thanh toán khi nhận tiền mặt
-                                <input type="radio" checked="checked" name="checkout">
+                                <input type="radio" value="1" checked="checked" name="checkout">
                                 <span class="radiomark"></span>
                             </label>
                         </div>
                         <div class="m-1">
                             <label class="container">Thẻ ATM nội địa/Internet Banking (Miễn phí thanh toán)
-                                <input type="radio" name="checkout">
+                                <input type="radio" value="2" name="checkout">
                                 <span class="radiomark"></span>
                             </label>
+                            <div id="credit-card" class="border p-2">
+                                <div class="row">
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PVPB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PACB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PAGB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PBAB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PBIDV.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PBVB.jpg">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PDAB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PEIB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PGPB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PHDB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PLPB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PMB.jpg">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PMRTB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PNAB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PNVB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123POCB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123POCEB.jpg">
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <img class="border-dashed" src="img/bank/123PPGB.jpg">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="m-1">
                             <label class="container">Thanh toán bằng MoMo -
                                 <a href="#">Chi tiết</a>
-                                <input type="radio" name="checkout">
+                                <input type="radio" value="3" name="checkout">
                                 <span class="radiomark"></span>
                             </label>
                         </div>
                         <div class="m-1">
                             <label class="container">Thanh toán bằng thẻ quốc tế Visa, Master, JCB
-                                <input type="radio" name="checkout">
+                                <input type="radio" value="4" name="checkout">
                                 <span class="radiomark"></span>
                             </label>
+                            <div id="visa" class="border p-2">
+                                <div class="row m-1">
+                                    <div class="col-1"></div>
+                                    <label class="col-2 middle-align">Số thẻ</label>
+                                    <input class="col-7" type="text" placeholder="VD: 1215 1451 1451 1542" required>
+                                </div>
+                                <div class="row m-1">
+                                    <div class="col-1"></div>
+                                    <label class="col-2 middle-align">Tên in trên thẻ</label>
+                                    <input class="col-7" type="text" placeholder="VD: NGUYEN VAN A" required>
+                                </div>
+                                <div class="row m-1">
+                                    <div class="col-1"></div>
+                                    <label class="col-2 middle-align">Mã bảo mật</label>
+                                    <input class="col-7" type="text" placeholder="VD: 123" required>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,19 +181,60 @@
                     <div class="card-body">
                         <div class="m-1">
                             <label class="container">Gửi quà tặng đến bạn bè, người thân
-                                <input type="checkbox" name="service">
+                                <input type="checkbox" value="1" name="service">
                                 <span class="checkmark"></span>
                             </label>
+                            <div id="gift" class="border p-2">
+                                <div class="mb-2">
+                                    <label class="container">Gói quà (30.000 đ)
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-1 p-1 border">
+                                            <img class="" src="img/gift/box.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="container">Thiệp mừng (15.000 đ)
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-1 p-1 border mr-1">
+                                            <img class="" src="img/gift/card1.jpg">
+                                        </div>
+                                        <div class="col-1 p-1 border mr-1">
+                                            <img class="" src="img/gift/card2.jpg">
+                                        </div>
+                                        <div class="col-1 p-1 border mr-1">
+                                            <img class="" src="img/gift/card3.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-2 row">
+                                    <label class="col-1 middle-align">Gửi từ</label>
+                                    <input class="col-4" type="text" placeholder="Tên người gửi" required>
+                                    <label class="col-1 middle-align"></label>
+                                    <label class="col-1 middle-align">tới</label>
+                                    <input class="col-4" type="text" placeholder="Tên người nhận" required>
+                                </div>
+                                <div class="mb-2 row">
+                                    <label class="col-1 middle-align">Lời nhắn</label>
+                                    <textarea class="col-10" placeholder="Ví dụ: Chúc mừng sinh nhật bạn (tối đa 200 từ)"></textarea>
+                                </div>
+                            </div>
                         </div>
                         <div class="m-1">
                             <label class="container">In hóa đơn đỏ
-                                <input type="checkbox" name="service">
+                                <input type="checkbox" value="2" name="service">
                                 <span class="checkmark"></span>
                             </label>
                         </div>
                         <div class="m-1">
                             <label class="container">Dịch vụ bọc sách (2000đ)
-                                <input type="checkbox" name="service">
+                                <input type="checkbox" value="3" name="service">
                                 <span class="checkmark"></span>
                             </label>
                         </div>

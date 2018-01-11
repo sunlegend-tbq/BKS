@@ -1069,3 +1069,9 @@ ul li .actived {
 .disable{
     cursor: not-allowed;
 }
+.border-dashed {
+    border: #ccc dashed 1px;
+}
+.border-dashed:hover {
+    border: #4CAF50 dashed 1px;
+}
