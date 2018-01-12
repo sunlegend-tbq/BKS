@@ -1063,9 +1063,9 @@ ul li .actived {
 .infor th, .infor tr {
     border-bottom: #4CAF50 double 1px;
 }
-.infor tr:last-child {
+/* .infor tr:last-child {
     border-bottom: none;
-}
+} */
 .disable{
     cursor: not-allowed;
 }
